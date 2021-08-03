@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>HAVA DURUMU UYGULMASI</title>
+</head>
+<body>
+    <div class="container my-5 mx-auto ">
+        <h1 class="text-muted text-center my-4">Hava Durumu</h1>
+        <form class="konum-degeistir my-4 text-center text-muted"><label for="sehir">Hava Durumu İçin Konum Giriniz</label>
+        <input type="text" name="sehir" class="form-control p-4"/>
+    </form>
+        <div class="card shadow-lg rounded d-none">
+        <img src="https://via.placeholder.com/400x300" class="zaman card-img-top">
+            <div class="icon bg-light mx-auto text-center">
+                 <img src="" alt="">
+            </div>
+            <div class="text-muted text-uppercase text-center detay">
+                <h5 class="my-3">Şehİr İsmİ</h5>
+                <div class="my-3">Hava Durumu</div>
+                <div class="display-4 my-4">
+                    <span>Sıcaklık</span>
+                    <span>&deg;C</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/tahmin.js"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>
