@@ -1,4 +1,4 @@
-const key = "IFGmGYdIwITQpFkE0Gi2J0xdFRomPlBM";
+const key = "xa8vJFpRFnnft2khJ0uDGNc00OA1pInH";
 const havaDurumuGetir = async (id) => {
   const temelUrl = "http://dataservice.accuweather.com/currentconditions/v1/";
   const sorgu = `${id}?apikey=${key}`;
@@ -18,9 +18,9 @@ const sehirGetir = async (konum) => {
   const res = await fetch(temelUrl + sorgu);
   const veri = await res.json();
 
-  return (veri[0]
-    );
+  return veri[0];
 };
+
 
 // sehirGetir("hongkong")
 //   .then((veri) => {

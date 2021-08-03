@@ -41,13 +41,15 @@ const guncelleUI = (veri) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const sehir = form.sehir.value.trim();
-  //console.log(sehir);
+  console.log(sehir);
 
   sehirGuncelle(sehir).then((veri) => {
     guncelleUI(veri);
-    //console.log(veri);
+    console.log(veri);
   });
   form.reset();
+
+  localStorage.setItem('sehir',sehir);
 });
 
 const sehirGuncelle = async (sehir) => {
@@ -59,3 +61,13 @@ const sehirGuncelle = async (sehir) => {
     havaDurumu,
   };
 };
+
+
+if(localStorage.getItem(sehir)){
+
+  sehirGuncelle(localStorage.getItem('sehir')).then((veri) => {
+    guncelleUI(veri);
+    console.log(veri);
+  });
+
+}
